@@ -1,0 +1,17 @@
+
+body {
+  font-family: 'Share Tech Mono',monospace;
+  background-image: url("https://i.ytimg.com/vi/guoTAS5HaQE/maxresdefault.jpg"); 
+}
+
+#whole {
+	text-align:center;
+}
+
+#top{
+	background-color:Cyan; 
+}
+
+#isi{
+	background-color: #DCDCDC;
+}

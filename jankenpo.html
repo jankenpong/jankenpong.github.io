@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAN KEN PON</title>
+	<link href="jankenpo.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+</head>	
+
+<body>
+<div id="whole">
+
+  <div id="top">
+    <h1>JAN KEN PON</h1>
+
+    <h3>Deskripsi Game</h3>
+    <ul>
+      <li>Game akan berakhir ketika user atau computer menang sebanyak 3 kali</li>
+      <li>Jika user menang/kalah akan tetap mendapatkan hadiah</li>
+    </ul>
+    <br><br><br>
+  </div>
+
+  <div id="isi">
+  <p >Pilih 3 opsi di bawah, gunakan feeling mu dalam memilih ya!</p>
+  <p id='round'>Round 1</p>
+  <p id='win'>Menang: 0 </p>
+  <p id='lose'>Kalah: 0</p>
+
+  <p id="finalResult"></p>
+
+  <div id='button'>
+    <button id="btnBatu">BATU</button>
+    <button id="btnKertas">KERTAS</button>
+    <button id="btnGunting">GUNTING</button>	
+  </div>
+
+  <div id='display'>
+    <p id="displayComputer"></p>
+    <p id="displayResult"></p>
+    <br><br>
+    <button id="btnNextRound" onClick="confirmBox()" style="visibility: hidden">NEXT ROUND</button>
+  </div>
+
+  <!-- hadiah kalo menang -->
+  <div id="hadiah" style="display:none">
+    <img src="https://4.bp.blogspot.com/-c_tFDVy5tio/WMefdvsxXJI/AAAAAAAACkk/y6w4gDH6btE6htKfuMkPYyYjoNqKuFQRACLcB/s1600/6792804501_c2ce0a5951_b.jpg">	
+    </img>  
+  </div>
+
+  <button type="button" id='spoiler' onclick="ambilHadiah()" style="display:none"  >
+    AMBIL HADIAH
+  </button>
+
+  <!-- hadiah kalo kalah -->
+
+  <div id="hadiahKalah" style="display:none">
+    <img src="https://static1.squarespace.com/static/5a4fea5cb1ffb62b78cfe50f/5a5234b18165f5deaa71cfdd/5a5234b5c830256b6198ec3f/1515336904268/Zonk.jpg?format=1000w">	
+    </img>  
+  </div>
+
+  <button type="button" id='spoilerKalah' onclick="ambilHadiahKalah()" style="display:none"  >
+    AMBIL HADIAH
+  </button>
+
+
+  <button type="button" id="refreshBtn" onClick="refresh()" style="display:none">Main Lagi</button>
+
+ </div>
+
+
+<h4>Made by aldoalprak</h4>
+</div>
+<script src="jankenpo.js"></script>
+
+
+</body>
+</html> 
